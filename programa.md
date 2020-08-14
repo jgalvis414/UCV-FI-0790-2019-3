@@ -21,13 +21,17 @@ Ficheros | 09-09-2020
 
 ## Evaluaciones
 
-El contenido de la materia sera evaluado mediante practicas asignadas, las cuales deben ser entregadas en formato *markdown* con comentarios y explicación del enfoque utilizado para resolver los problemas.
+El contenido de la materia sera evaluado mediante practicas asignadas, las cuales deben ser entregadas en formato *markdown* con comentarios y explicación del enfoque utilizado para resolver los problemas. Adicionalmente serán enviado dos proyectos a realizarse, uno que sera presentado individualmente y el segundo en grupos, para el segundo proyecto, los estudiantes puede agruparse en grupos máximo de dos personas.
 
 ### Fecha de envío y recepción de evaluaciones
 
 evaluación | envío | recepción
 -----------|-------|----------
+practica 1 | 19-08-2020 | 21-08-2020
+practica 2 | 26-08-2020 | 28-08-2020
+practica 3 | 02-09-2020 | 04-09-2020
+practica 4 | 09-09-2020 | 11-09-2020
+proyecto 1 | 04-09-2020 | 18-09-2020 
+proyecto 2 | 11-09-2020 | 25-09-2020
 
-
-
-
+Todas las asignaciones deben ser enviadas por los estudiantes via email siguiendo el formato *markdown* y en caso de ser necesario mediante la compresión de archivos.
