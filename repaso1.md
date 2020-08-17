@@ -90,6 +90,40 @@ Aunque hoy en dia no tratamos directamente con el sistema binario para programar
 
 En la tabla ASCII podemos ver que podemos almacenar tres tipos de datos distintos, un carácter o serie de caracteres, a esto se le conoce como *string*, un numero, o un hexadecimal.
 
+Los tipos de datos básicos que podemos representar en Python son los siguientes.
+
+Tipo | Nombre
+-----|-------
+Entero | int
+Flotante | float
+Complejo | complex
+Cadena de Caracteres | string
+Lista | list
+Tupla | tuple
+Diccionario | dict
+
+Veamos algunos ejemplos
+
+```python
+>>> 256
+256
+>>> 3.1416
+3.1416
+>>> 1 + 2j
+(1+2j)
+>>> "Hola Mundo"
+'Hola Mundo'
+>>> [4, 3, 2, 1]
+[4, 3, 2, 1]
+>>> (4, 3, 2, 1)
+(4, 3, 2, 1)
+>>> {1: "uno", 2: "dos", 3: "tres"}
+{1: 'uno', 2: 'dos', 3: 'tres'}
+```
+Introducir un valor directamente implementado su tipo de dato en un lenguaje de programación, se le conoce como literal. El ejemplo anterior se muestran casos de literales correspondientes a la tabla anterior. 
+
+Como nota adicional, en los literales para cadena de caracteres pueden usarse tanto comillas dobles como comillas simples.
+
 ## Operadores (Asignación)
 
 ## Operadores (Aritméticos y Lógicos)
