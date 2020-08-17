@@ -160,6 +160,38 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
-Es muy común encontrar este tipo de errores cuando somos principiantes, pero con la practica cada vez serán menos los errores y serán mas fáciles y rápidos de identificar, el interprete de Python, nos da en detalle que error ocurrió y cual linea de codigo, para asi realizar las correcciones necesarias.
+Es muy común encontrar este tipo de errores cuando somos principiantes, pero con la practica cada vez serán menos los errores y serán mas fáciles y rápidos de identificar, el interprete de Python, nos da en detalle que error ocurrió y cual linea de código, para asi realizar las correcciones necesarias.
 
-## Estructuras (Estructura Condicional - If)
+Los operadores aritméticos disponibles en el lenguaje de programación Python son los siguientes:
+
+Operador | Nombre | Ejemplo
+---------|--------|--------
++ | Adición | i + j
+- | Sustracción | i - j
+* | Multiplicación | i * j
+/ | División | i / j
+% | Modulo | i % j
+** | Potencia | i ** j
+// | División entera | i // j
+
+Existen distintas formas de hacer asignaciones usando a la misma vez operadores aritméticos, las cuales podemos resumir en la siguiente tabla.
+
+Operador | Ejemplo | Equivalente
+---------|---------|------------
+= | x = 6 | x = 6
++= | x += 5 | x = x + 5
+-= | x -= 5 | x = x - 5
+*= | x *= 5 | x = x * 5
+/= | x /= 5 | x = x / 5
+%= | x %= 5 | x = x % 5
+//= | x //= 5 | x = x // 5
+**= | x **= 5 | x = x ** 5
+
+En una operación aritmética compuesta por varios operadores, el orden de resolución es */*, ***, *-* y *+*, por ende si se desea resolver una operación antes en esta secuencia, los operandos deben encapsularse en paréntesis.
+
+```python
+>>> 4 + 8 / 7
+5.142857142857142
+>>> (4 + 8) / 7
+1.7142857142857142
+```
