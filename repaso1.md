@@ -97,6 +97,7 @@ Tipo | Nombre
 Entero | int
 Flotante | float
 Complejo | complex
+Booleano | bool
 Cadena de Caracteres | string
 Lista | list
 Tupla | tuple
@@ -111,6 +112,8 @@ Veamos algunos ejemplos
 3.1416
 >>> 1 + 2j
 (1+2j)
+>>> True
+True
 >>> "Hola Mundo"
 'Hola Mundo'
 >>> [4, 3, 2, 1]
@@ -126,6 +129,37 @@ Como nota adicional, en los literales para cadena de caracteres pueden usarse ta
 
 ## Operadores (Asignación)
 
+El primer operador a aprender siempre en un lenguaje de programación, es el operador de asignación *(=)*, este permite asignarle a una variable, un literal, otra variable, una operación aritmética, una operación lógica o una combinación de todas estas. Hagamos unos ejemplos de asignaciones.
+
+```python
+>>> numero_entero = 256
+>>> numero_flotante = 3.1416
+>>> numero_complejo = 1 + 2j
+>>> saludo = "Hola Mundo"
+>>> valido = True
+>>> print(numero_entero)
+256
+>>> print(numero_flotante)
+3.1416
+>>> print(saludo)
+'Hola Mundo'
+```
+
+En cada caso se sigue el mismo patrón, se establece el identificador o nombre de variable, seguido del operador de asignación y finalmente el literal a asignar. La función incorporada *print*, nos permite imprimir en pantalla el contenido de una variable, de esta forma podemos hacer una inspección de una variable en la ejecución de algoritmo de computo.
+
+Para identificar variables, se pueden usar cualquier combinación de letras y/o números, incluyendo el caracteres *underscore* (*_*), con las excepción de que el nombre de la variable no puede comenzar con números.
+
 ## Operadores (Aritméticos y Lógicos)
+
+Como ya habíamos mencionado anteriormente, podemos realizar operación aritméticas y/o operaciones lógicas entre variables, una regla básica a seguir, es que solo podemos realizar operaciones entre variables que contengan el mismo tipo de dato o tipos de datos compatibles, podemos realizar operaciones entre tipos de datos numéricos (*int* y *float*), pero al realizar operaciones entre tipos de datos no compatibles, el programa arrojara en pantalla un error de ejecución y la misma sera interrumpida.
+
+```python
+>>> 24 + "hola"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+
+Es muy común encontrar este tipo de errores cuando somos principiantes, pero con la practica cada vez serán menos los errores y serán mas fáciles y rápidos de identificar, el interprete de Python, nos da en detalle que error ocurrió y cual linea de codigo, para asi realizar las correcciones necesarias.
 
 ## Estructuras (Estructura Condicional - If)
