@@ -60,4 +60,59 @@ or | Or | (i > j) and (k == z)
 
 Ademas de agrupaciones podemos aplicar los operadores lógicos entre variables booleanas, o una combinación de relaciones con variables booleanas.
 
+## Entrada y Salida
 
+El computador nos permite a través del Lenguaje de Programación, realizar el computo de un algoritmo para resolver un determinado problema, por lo general los algoritmos requieren una información conocida como datos de entrada, y el computo determina una información que requieren ser mostrados en pantalla, conocida como datos de salida.
+
+La entrada de información se puede realizar en pantalla durante la ejecución de un programa, a través del comando *input*, donde el programa se interrumpe a la esperada de la entrada de información por el usuario.
+
+```python
+>>> edad = input("Edad? ")
+Edad? 31
+>>> edad
+'31'
+```
+
+El comando o función incorporada *input*, permite suministrar un mensaje al usuario, este mensaje por lo general corto, da una idea al usuario de la información que requiere el programa para realizar los cómputos, otros usos de este comando es imprimir en pantalla información adicional como ayuda o una marquesina del programa.
+
+En el ejemplo anterior, al mostrar la representación de la variable edad, vemos que el valor es *'31*', el mismo que hemos suministrado pero entre comillas simples, queriendo decir que la entrada fue interpretada como una cadena de caracteres.
+
+Si requerimos para nuestro computo, realizar operaciones algebraicas sobre este dato de entrada, debemos transformar de cadena de caracteres a entero como tipo de dato.
+
+Python nos ofrece una serie de funciones incorporadas para transformar entre tipo de datos.
+
+Función | Acción | Ejemplo
+--------|--------|--------
+int | Transforma una variable o literal a entero | int(i)
+float | Transforma una variable o literal a flotante | float(i)
+str | Transforma una variable o literal a *str* o cadena de caracteres | str(i)
+
+Adicionalmente podemos encapsular una función incorporada dentro de otra, para asi ahorrar algo de código, Python realizara las evaluaciones desde la mas interna hasta la mas externa.
+
+```python
+>>> edad_str = int(input("Edad? "))
+Edad? 31
+>>> edad
+31
+```
+
+La salida de información se puede realizar en pantalla durante la ejecución de un programa, a través del comando *print*, donde el programa imprimirá en consola la información que proveamos como argumento de la función *print*.
+
+```python
+>>> print("Hola mundo")
+Hola mundo
+```
+
+En la función *print*, podemos agregar tanta información como queramos separando con el separador de argumentos *,*.
+
+```python
+>>> faltante = 40 - edad
+>>> print("Te falta", faltante, "años para cumplir 40")
+Te falta 9 años para cumplir 40
+```
+
+Al usar de esta forma la función *print*, Python se encargara de convertir cada tipo de dato en su equivalente en cadena de caracteres, y finalmente concatenara separando con espacios.
+
+## Nuestro primer algoritmo de computo
+
+Una vez que conocemos estos elementos esenciales 
