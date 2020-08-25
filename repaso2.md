@@ -115,4 +115,92 @@ Al usar de esta forma la función *print*, Python se encargara de convertir cada
 
 ## Nuestro primer algoritmo de computo
 
-Una vez que conocemos estos elementos esenciales 
+Una vez que conocemos estos elementos esenciales podemos construir los primeros algoritmos de computo.
+
+Problema propuesto: Desarrolle un algoritmo que determine la hipotenusa de un triangulo rectángulo dado la longitud de los catetos del angulo recto.
+
+```python
+>>> a = int(input("Introduzca cateto adyacente: "))
+Introduzca cateto adyacente: 3
+>>> b = int(input("Introduzca cateto opuesto: "))
+Introduzca cateto opuesto: 4
+>>> c = (a ** 2 + b ** 2) ** 0.5
+>>> print("Longitud de la hipotenusa:", c)
+Longitud de la hipotenusa: 5.0
+```
+
+Hasta ahora hemos recopilado los elementos básicos para hacer algoritmos de computo donde se evalúen expresiones algebraicas, pero muchos algoritmos requieren de procedimientos donde se realicen selecciones, tratamiento condicional y también que se repitan tareas u otros procedimientos un numero determinado de pasos o hasta que se cumpla una condición.
+
+Para esto los lenguajes de programación propones estructuras cuya sintética permiten llevar a cabo este tipo de operaciones algorítmicas.
+
+## Estructura Condicional (Sentencia *if*)
+
+Muy a menudo requerimos llevar la ejecución de un algoritmo a través de una ruta o otra dependiendo de si una condición se cumple o no, en los lenguajes de programación estas condiciones se expresan con operaciones de relación, operaciones lógicas o una combinación de estas. Recordemos que el resultado de estas operaciones son valores booleanos que se interpretan como verdadero o falso, para una condición representa que la condición se cumple (*True*) o no se cumple (*False*).
+
+Las operaciones que se realizan en base al valor bien sea verdadero o falso, se pueden separar y tratar mediante la sentencia *if*, la cual tiene la siguiente sintáctica.
+
+```python
+if (expresion):
+    instruccion_1
+    instruccion_2
+    instruccion_3
+```
+
+Hay unos aspectos importantes que resaltar en esta estructura, el primero es que se usa la palabra reservada *if* del lenguaje de programación, el segundo es que debemos encapsular dentro de paréntesis (en caso de ser necesarios) una expresión de relación y/o lógica, en caso de que esta evaluación de como resultado verdadero, se procede a las instrucciones correspondientes. Un tercer aspecto es que este tipo de estructura tienen un código asociado que debe estar contenido dentro de un bloque de instrucciones, estos bloques se definen en un principio por el símbolo *:*, para indicar que inicia un bloque de instrucciones, de aquí en adelante todas las instrucciones asociadas a dicho bloque deben estar identadas (tabulaciones o espacios), con respecto al bloque anterior, se recomienda que para Python, cada identación sea de 4 espacios, una vez finalizado el bloque se regresa al bloque anterior reduciendo la identación. Veamos el siguiente ejemplo.
+
+```python
+print("***Inicio del programa***")
+
+edad = int(input("Introduzca edad: "))
+
+if (edad > 18):
+    print("Es mayor de edad, puede entrar al establecimiento")
+
+print("***Fin del programa***")
+```
+
+Si ejecutamos este programa, tendríamos los siguientes posibles resultados.
+
+```python
+***Inicio del programa***
+Introduzca edad: 12
+***Fin del programa***
+```
+
+```python
+***Inicio del programa***
+Introduzca edad: 21
+Es mayor de edad, puede entrar al establecimiento
+***Fin del programa***
+```
+
+Como podemos observar, dependiendo del valor que hayamos introducido, una linea extra se imprime en pantalla, debido a que se ejecuta una instrucción dentro del bloque de una sentencia *if*, cuyo resultado de la expresión de relación dio como verdadero.
+
+También podemos ejecutar código cuando el resultado el falso usando el bloque de la palabra reservada *else*.
+
+```python
+print("***Inicio del programa***")
+
+edad = int(input("Introduzca edad: "))
+
+if (edad > 18):
+    print("Es mayor de edad, puede entrar al establecimiento")
+else:
+    print("Es menor de edad, no puede entrar")
+
+print("***Fin del programa***")
+```
+
+## Modulo de Python
+
+Finalmente, debemos tener la posibilidad de poder ejecutar un programa cuantas veces sea necesario, para esto se definen los módulos de Python, los cuales son ficheros del sistema operativo donde podemos almacenar nuestro código, estos ficheros son escritos en formato de texto pero se guardan con extension *.py*. Podemos utilizar cualquier editor de texto para escribir nuestro código en Python y guardarlo bajo un nombre de archivo con extension Python, ejemplos *edad.py*.
+
+Y la manera de ejecutar estos módulos es a través de la terminal del sistema operativo, navegando al mismo directorio donde reside el modulo ya guardado, y ejecutando el comando *python* seguido del nombre del fichero.
+
+```
+> python edad.py
+```
+
+Aunque podemos utilizar cualquier editor de texto, es recomendable usar uno que sea apropiado para el desarrollo, las ventajas principales es que estos editores hacen un resaltado de la sintáctica de Python, colocando colores especiales en las palabras reservadas como también en otros elementos del lenguaje para su fácil comprensión.
+
+Los editores mas utilizados actualmente son Visual Studio Code, Sublime Text y Atom. El estudiante de este curso puede utilizar aquel editor con el cual se sienta mas comodo.
