@@ -55,7 +55,7 @@ Adicionalmente podemos hacer composiciones de relaciones, es decir, aquellas ope
 Operador | Nombre | Ejemplo
 ---------|--------|--------
 and | Inclusión | (i > j) and (k == z)
-or | Or | (i > j) and (k == z)
+or | Or | (i > j) or (k == z)
 ! | Negación | !(i > j)
 
 Ademas de agrupaciones podemos aplicar los operadores lógicos entre variables booleanas, o una combinación de relaciones con variables booleanas.
