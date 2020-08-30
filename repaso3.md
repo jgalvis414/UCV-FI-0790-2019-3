@@ -74,3 +74,68 @@ denominador | Como el denominador de nuestra ecuación siempre es un producto, o
 termino | En esta variable almacenaremos el valor de cada termino a medida que vamos calculando nuestra serie, esta variable es importante para detener el ciclo *while*, ya que al tener siempre valores cada vez mas pequeños, eventualmente su valor va a ser menor al valor de la tolerancia, y se finalizara la ejecución del ciclo *while*.
 resultado | finalmente tenemos esta variable que va a ir sumándose a ella, al igual que nuestra serie, el resultado de cada termino, y finalmente poder mostrar en pantalla el resultado de este computo.
 
+Realicemos otros problema:
+
+El Valor de PI (𝜋) puede ser calculado de diferentes formas, una de ellas es empleando la expresión abajo indicada:
+
+![numero pi](https://github.com/carrasquel/UCV-FI-0790-2019-3/raw/master/ecuaciones/pi.png "Numero pi")
+
+Vamos a usar un enfoque muy similar al problema anterior para resolver este problema:
+
+```python
+# pi.py
+
+tol = 1.0e-7
+
+contador = 1
+denominador = (contador) ** 2 * (contador + 1) ** 2 * (contador + 2) ** 2
+termino = 1 / denominador
+resultado = termino
+
+while termino > tol:
+
+    contador += 1
+    denominador = (contador) ** 2 * (contador + 1) ** 2 * (contador + 2) ** 2
+    termino = 1 / denominador
+    resultado += termino
+
+resultado = ((resultado * 16 + 39) / 4) ** 0.5
+
+print("Numero Pi:", resultado)
+```
+
+si ejecutamos este modulo veremos con resultado en pantalla lo siguiente:
+
+```python
+Numero Pi: 3.14159251116778
+```
+
+## Modulos Incorporados de Python
+
+Python posee muchos módulos con funciones y variables que nos permiten reducir nuestro código a la hora de realizar ciertos cómputos. Si requerimos de computar el valor de Pi, con Python podemos obtenerlo a partir del modulo math.
+
+Los módulos incorporados pueden ser usados en nuestro código usando la palabra reservada *import* del lenguaje de programación.
+
+```python
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> math.e
+2.718281828459045
+>>> math.sin(0.75)
+0.6816387600233341
+```
+
+Algo que resaltar es que al importar un modulo, podemos usar todas las funcionalidades que están agrupadas dentro del modulo incorporado. Si por el contrario solo queremos utilizar algunas pocas podemos usar la forma de importación alternativa usando la palabra reservada *from* del lenguaje de programación.
+
+```python
+from math import sin, cos
+>>> sin(0.75)
+0.6816387600233341
+>>> cos(0.75)
+0.7316888688738209
+```
+
+A lo largo de este curso utilizaremos otras funcionalidades de los distintos módulos incorporados dentro de Python.
+
+
